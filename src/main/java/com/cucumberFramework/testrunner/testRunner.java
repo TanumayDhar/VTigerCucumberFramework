@@ -20,36 +20,5 @@ glue="com/cucumberFramework/stepDefinations", monochrome=true,plugin= {"pretty",
 public class testRunner {
 
 
-	private TestNGCucumberRunner testNGCucumberRunner;
-
-	@BeforeClass(alwaysRun=true)
-	public void setupClass()
-	{
-
-		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());	
-
-	}
-
-	@Test(groups="cucumber",description="Runs Cucumber features", dataProvider="features")
-	public void feature(CucumberFeatureWrapper cucumberFeatureWrapper)
-	{
-
-		testNGCucumberRunner.runCucumber(cucumberFeatureWrapper.getCucumberFeature());
-
-	}
-	@DataProvider
-	public Object[][] features()
-	{
-
-		return testNGCucumberRunner.provideFeatures();
-
-	}
-	@AfterClass(alwaysRun=true)
-	public void tearDown()
-	{
-
-		testNGCucumberRunner.finish();
-
-
-	}
+	
 }
