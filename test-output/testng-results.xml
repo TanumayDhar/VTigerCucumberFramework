@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="26597" started-at="2020-10-29T12:55:42Z" finished-at="2020-10-29T12:56:08Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="testRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumberFramework.testrunner.testRunner@7a52f2a2]" name="feature" class="com.cucumberFramework.testrunner.testRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Regression Test" duration-ms="26597" started-at="2020-10-29T12:55:42Z" finished-at="2020-10-29T12:56:08Z">
+      <class name="com.cucumberFramework.testrunner.testRunner">
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:com.cucumberFramework.testrunner.testRunner@7a52f2a2]" name="setupClass" is-config="true" duration-ms="180" started-at="2020-10-29T18:25:42Z" finished-at="2020-10-29T18:25:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cucumberFramework.testrunner.testRunner@7a52f2a2]" name="feature" duration-ms="26317" started-at="2020-10-29T18:25:42Z" description="Runs Cucumber features" data-provider="features" finished-at="2020-10-29T18:26:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sign In]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cucumberFramework.testrunner.testRunner@7a52f2a2]" name="tearDown" is-config="true" duration-ms="18" started-at="2020-10-29T18:26:08Z" finished-at="2020-10-29T18:26:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cucumberFramework.testrunner.testRunner -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
