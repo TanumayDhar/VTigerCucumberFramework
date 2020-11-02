@@ -27,7 +27,7 @@ public class HomePage {
 	WebElement leadsLink;
 
 	@FindBy(xpath = "//table[@class='hdrTabBg']/tbody/tr//td/a[text()='Organizations']")
-	WebElement organizationsLink;
+	 public WebElement organizationsLink;
 
 	@FindBy(xpath = "//table[@class='hdrTabBg']/tbody/tr//td/a[text()='Contacts']")
 	WebElement contactsLink;
@@ -37,6 +37,8 @@ public class HomePage {
 
 	@FindBy(xpath = "//img[@alt='Create Lead...']")
 	WebElement leadsButton;
+	
+	
 
 
 
@@ -60,7 +62,7 @@ public class HomePage {
 	}
 	public void navigateToorganizationsLink()
 	{
-
+		organizationsLink.click();
 
 
 	}

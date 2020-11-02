@@ -1,13 +1,8 @@
 package com.cucumberFramework.stepDefinations;
-
-import org.apache.log4j.Logger;
-
 import com.cucumberFramework.helper.WaitHelper;
 import com.cucumberFramework.helper.constants;
-import com.cucumberFramework.pageobjects.HomePage;
 import com.cucumberFramework.pageobjects.loginPage;
 import com.cucumberFramework.testBase.TestBase;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

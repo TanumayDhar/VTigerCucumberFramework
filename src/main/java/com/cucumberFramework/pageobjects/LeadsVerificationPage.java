@@ -30,8 +30,8 @@ public class LeadsVerificationPage {
 
 	@FindBy(xpath="//*[@id='mouseArea_First Name']")
 	WebElement firstName;
-	//@FindBy(xpath="//*[@id='mouseArea_Last Name']") //correct xpath
-	@FindBy(xpath="//*[@id='mouseArea_Last Name1']")// for failing the scenario		
+	@FindBy(xpath="//*[@id='mouseArea_Last Name']") //correct xpath
+	//@FindBy(xpath="//*[@id='mouseArea_Last Name1']")// for failing the scenario		
 	WebElement lastName;
 
 	@FindBy(xpath="//*[@id='mouseArea_Company']")

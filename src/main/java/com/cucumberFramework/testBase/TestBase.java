@@ -1,11 +1,9 @@
 package com.cucumberFramework.testBase;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import com.cucumberFramework.enums.browsers;
-import com.cucumberFramework.enums.os;
+
 
 public class TestBase {
 
