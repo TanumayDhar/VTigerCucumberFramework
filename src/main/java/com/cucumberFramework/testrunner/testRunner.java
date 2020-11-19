@@ -11,7 +11,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.CucumberOptions;
 
 
-@CucumberOptions(features="C:\\Users\\tanumay123\\Desktop\\Cucumber\\Workspace_photon\\VTigerCucumberFramework\\src\\main\\java\\com\\cucumberFramework\\features\\Organisation.feature",
+@CucumberOptions(features="C:\\Users\\tanumay123\\Desktop\\Work\\Cucumber\\Workspace_photon\\VTigerCucumberFramework\\src\\main\\java\\com\\cucumberFramework\\features\\Organisation.feature",
 glue="com/cucumberFramework/stepDefinations", monochrome=true,plugin= {"pretty","html:target/cucumber-reports/cucumber-pretty", "json:target/cucumber-reports/cucumberTestReport.json",
 "rerun:target/cucumber-reports/cucumberTestReport.txt"})
 @RunWith(Cucumber.class)

@@ -39,14 +39,9 @@ public class FrameHelper {
 		log.info("Switched to frame "+element.toString());
 
 	}
+
 	
-	public void switchtoParentFrame()
-	{
-		
-		driver.switchTo().defaultContent();
-		log.info("Switched to parent frame");
-	}
-	
+
 
 
 

@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import com.cucumberFramework.enums.browsers;
+import com.cucumberFramework.helper.ResourceHelper;
 
 
 public class TestBase {
@@ -13,7 +14,7 @@ public class TestBase {
 	{
 		if(browser.equals(browsers.CHROME.name()))
 				{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\tanumay123\\Desktop\\Cucumber\\Workspace_photon\\VTigerCucumberFramework\\src\\main\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", ResourceHelper.getResourcePath("\\src\\main\\resources\\drivers\\chromedriver.exe"));
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.navigate().refresh(); //refresh the page
