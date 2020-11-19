@@ -16,6 +16,8 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\tanumay123\\Desktop\\Cucumber\\Workspace_photon\\VTigerCucumberFramework\\src\\main\\resources\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
+			driver.navigate().refresh(); //refresh the page
+			
 			
 			
 				}else if

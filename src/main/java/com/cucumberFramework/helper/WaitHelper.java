@@ -1,5 +1,7 @@
 package com.cucumberFramework.helper;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,6 +31,11 @@ public class WaitHelper {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		logger.info("Element is visible ....");
 
+	}
+	
+	public void setImplicitWait(long timeout, TimeUnit unit) {
+		logger.info("Implicit Wait has been set to: " + timeout);
+		driver.manage().timeouts().implicitlyWait(timeout, unit);
 	}
 }
 

@@ -1,6 +1,7 @@
 package com.cucumberFramework.pageobjects;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -117,6 +118,7 @@ public class LeadsPage {
 		
 		log.info("entering first name as : " + firstName);
 		this.firstName.sendKeys(firstName);
+		this.firstName.sendKeys(Keys.F5); //refresh the page
 	}
 
 	public void enterLastName(String lastName) {
